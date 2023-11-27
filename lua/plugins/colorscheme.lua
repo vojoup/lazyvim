@@ -3,6 +3,11 @@ return {
   lazy = true,
   name = "catppuccin",
   opts = {
+    color_overrides = {
+      mocha = {
+        base = "#1a1823",
+      },
+    },
     integrations = {
       aerial = true,
       alpha = true,
@@ -49,7 +54,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
