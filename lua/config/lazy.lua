@@ -21,8 +21,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
-    { import = "lzyvim.plugins.extras.lang.typescript" },
-    { import = "lzyvim.plugins.extras.inting.eslint" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
     -- { import = "lazyvim.plugins.extras.lang.go" },
     -- { import = "lzyvim.plugins.extras.lang.rust" },
     -- import/override with your plugins
