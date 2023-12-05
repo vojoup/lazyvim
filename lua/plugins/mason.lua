@@ -4,8 +4,8 @@ return {
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "svelte-language-server",
-        "css",
-        "html",
+        "css-lsp",
+        "html-lsp",
       })
     end,
   },
