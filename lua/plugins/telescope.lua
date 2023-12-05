@@ -35,6 +35,14 @@ return {
       end,
       desc = "Resume last search",
     },
+    { "<leader>ff", Util.telescope("git_files"), desc = "Find Files (git files)" },
+    { "<leader>fF", Util.telescope("files"), desc = "Find Files (within current root)" },
+    {
+      "<leader>ss",
+      function()
+        require("telescope.builtin").lsp_document_symbols()
+      end,
+      desc = "Find Files (within current root)",
+    },
   },
-  -- { "<leader>ff", Util.telescope("files"), { cwd = false }, desc = "Find Files (cwd)" },
 }
