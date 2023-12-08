@@ -27,9 +27,9 @@ return {
         enabled = true,
         underlines = {
           errors = { "undercurl" },
-          hints = { "undercurl" },
+          hints = { "underdashed" },
           warnings = { "undercurl" },
-          information = { "undercurl" },
+          information = { "underdotted" },
         },
       },
       navic = { enabled = true, custom_bg = "lualine" },
