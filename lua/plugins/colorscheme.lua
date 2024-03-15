@@ -1,6 +1,7 @@
 return {
   "catppuccin/nvim",
   lazy = true,
+  priority = 1000,
   name = "catppuccin",
   opts = {
     color_overrides = {
@@ -50,11 +51,17 @@ return {
     priority = 1000,
     opts = {},
   },
-  -- Configure LazyVim to load gruvbox
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  -- Configure LazyVim to load the preferred colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "tokyonight-night",
     },
   },
 }

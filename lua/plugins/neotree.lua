@@ -4,13 +4,14 @@ return {
     {
       "<leader>fe",
       function()
-        require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
+        require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd(), reveal = true })
       end,
       desc = "Explorer NeoTree (root dir)",
     },
   },
   opts = {
     window = {
+      position = "float",
       mappings = {
         ["<space>"] = {
           "toggle_node",
