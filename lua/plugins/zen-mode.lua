@@ -7,6 +7,7 @@ return {
     plugins = {
       gitsigns = { enabled = true },
       tmux = { enabled = false }, -- disables the tmux statusline
+      twilight = { enabled = false }, -- enable to start Twilight when zen mode opens
     },
   },
 }

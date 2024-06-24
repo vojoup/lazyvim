@@ -35,8 +35,8 @@ return {
       end,
       desc = "Resume last search",
     },
-    { "<leader>ff", Util.telescope("git_files"), desc = "Find Files (git files)" },
-    { "<leader>fF", Util.telescope("files"), desc = "Find Files (within current root)" },
+    { "<leader>ff", Util.pick("git_files"), desc = "Find Files (git files)" },
+    { "<leader>fF", Util.pick("files"), desc = "Find Files (within current root)" },
     {
       "<leader>ss",
       function()
