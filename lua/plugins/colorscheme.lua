@@ -19,7 +19,7 @@ return {
           mocha = {
             mantle = "#0e0f16",
             crust = "#0e0f16",
-            base = "#16161e",
+            base = "#000000",
 
             rosewater = "#efc9c2",
             flamingo = "#ebb2b2",
