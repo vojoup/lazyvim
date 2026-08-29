@@ -82,30 +82,30 @@ return {
   --   priority = 1000,
   --   opts = {},
   -- },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = function()
-  --     return {
-  --       sidebars = {
-  --         "qf",
-  --         "vista_kind",
-  --         -- "terminal",
-  --         "spectre_panel",
-  --         "startuptime",
-  --         "Outline",
-  --       },
-  --       on_highlights = function(hl, c)
-  --         hl.CursorLineNr = { fg = c.orange, bold = true }
-  --         hl.LineNrAbove = { fg = c.fg_gutter }
-  --         -- hl.LineNr = { fg = c.orange, bold = true }
-  --         hl.LineNrBelow = { fg = c.fg_gutter }
-  --         hl.LspInlayHint = { fg = c.dark3, italic = true }
-  --       end,
-  --     }
-  --   end,
-  -- },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = function()
+      return {
+        sidebars = {
+          "qf",
+          "vista_kind",
+          -- "terminal",
+          "spectre_panel",
+          "startuptime",
+          "Outline",
+        },
+        on_highlights = function(hl, c)
+          hl.CursorLineNr = { fg = c.orange, bold = true }
+          hl.LineNrAbove = { fg = c.fg_gutter }
+          -- hl.LineNr = { fg = c.orange, bold = true }
+          hl.LineNrBelow = { fg = c.fg_gutter }
+          hl.LspInlayHint = { fg = c.dark3, italic = true }
+        end,
+      }
+    end,
+  },
   -- { "rose-pine/neovim", name = "rose-pine" },
   { "rebelot/kanagawa.nvim" },
   { "yorumicolors/yorumi.nvim" },
