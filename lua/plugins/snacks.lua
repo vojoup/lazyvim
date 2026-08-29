@@ -33,10 +33,10 @@ return {
         dim = true,
         git_signs = false,
         diagnostics = false,
-        line_number = false,
+        line_number = true,
         relative_number = false,
         signcolumn = "no",
-        indent = false,
+        indent = true,
       },
     },
     dashboard = {
