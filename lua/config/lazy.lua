@@ -37,6 +37,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
+  dev = { path = "~/my-things", fallback = true }, -- dev=true plugins: ~/my-things/<name>, else git
   -- install = { colorscheme = { "catppuccin" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {

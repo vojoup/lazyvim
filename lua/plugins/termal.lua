@@ -1,7 +1,7 @@
 return {
   {
     "vojoup/thermal",
-    dir = vim.fn.expand("~/my-things/thermal"),
+    dev = true, -- local checkout if present, else GitHub (see dev in config/lazy.lua)
     name = "thermal",
     dependencies = { "catppuccin/nvim" },
     lazy = false,
