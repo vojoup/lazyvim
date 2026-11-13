@@ -10,9 +10,20 @@ return {
     explorer = {
       enabled = true,
     },
+    lazygit = {
+      config = {
+        os = {
+          edit = 'test -z "$NVIM"; and nvim -- {{filename}}; or begin; nvim --server "$NVIM" --remote-send "q"; and nvim --server "$NVIM" --remote {{filename}}; end',
+        },
+      },
+    },
     picker = {
+      previewers = {
+        diff = { style = "fancy" },
+      },
       sources = {
         explorer = {
+          hidden = true,
           jump = { close = true },
           layout = {
             preset = "vertical",
@@ -23,14 +34,16 @@ return {
     zen = {
       enabled = true,
       win = {
-        width = 230,
+        width = function()
+          return vim.o.columns >= 160 and 120 or 0
+        end,
         backdrop = {
           transparent = false,
           blend = 99,
         },
       },
       toggles = {
-        dim = true,
+        dim = false,
         git_signs = false,
         diagnostics = false,
         line_number = true,
